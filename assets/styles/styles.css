@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  input {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  #moviesList {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+  }
+  
+  #moviesList .movie-info  {
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    background-color: #f6f6f6;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block
+  }
+
+  #moviesList .movie-info.hidden {
+    display: none;
+  }
+
+  #moviesList .movie-info {
+    display: flex;
+  }
+  
+  #moviesList .movie-info span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #moviesList .movie-info .movie-remove{
+    width: 30px;
+    height: 25px;
+    margin-left: auto;
+    margin-top: 5px;
+    cursor: pointer;
+  }
